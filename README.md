@@ -17,7 +17,7 @@ CT Club KOOK 机器人 Linux 服务端客户端与版本发布。
 
 ```bash
 set -Eeuo pipefail
-VERSION="2026.09.29"
+VERSION="2026.09.30"
 INSTALL_DIR="/www/wwwroot/ct-club"
 WORK_DIR="$(mktemp -d -t ct-club-install-XXXXXX)"
 trap 'rm -rf "$WORK_DIR"' EXIT
@@ -79,7 +79,7 @@ cat /www/wwwroot/ct-club/release.json
 ## 重要说明
 
 - 首次安装包是全新初始化包，不包含旧账号、数据库、插件配置、Bot Token 或授权文件。
-- 插件业务数据和配置属于敏感数据，请定期备份；网页中的“全部配置导出”仅限一级管理员使用。
+- 插件业务数据和配置属于敏感数据，请定期备份；网页中的配置导出仅限一级管理员使用，可一键导出全部配置，也可按平台配置及每个插件的启停状态、设置和卡片文案分别选择。导出文件可能包含插件访问密钥。
 - 只能运行一个服务进程和一个 worker，否则会重复连接 KOOK、重复执行定时任务。
 - 如果机器人未上线，先检查卡密状态、Supervisor 日志和服务器到 KOOK/授权服务的出站网络。
 
@@ -87,5 +87,5 @@ cat /www/wwwroot/ct-club/release.json
 
 ## Release
 
-- 最新版本：[CT Club v2026.09.29](https://github.com/BOTBAKS/MR_KOOK_BOT/releases/tag/v2026.09.29)
+- 最新版本：[CT Club v2026.09.30](https://github.com/BOTBAKS/MR_KOOK_BOT/releases/tag/v2026.09.30)
 - 仓库：[BOTBAKS/MR_KOOK_BOT](https://github.com/BOTBAKS/MR_KOOK_BOT)
