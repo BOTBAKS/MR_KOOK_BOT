@@ -17,7 +17,7 @@ CT Club KOOK 机器人 Linux 服务端客户端与版本发布。
 
 ```bash
 set -Eeuo pipefail
-VERSION="2026.09.28"
+VERSION="2026.09.29"
 INSTALL_DIR="/www/wwwroot/ct-club"
 WORK_DIR="$(mktemp -d -t ct-club-install-XXXXXX)"
 trap 'rm -rf "$WORK_DIR"' EXIT
@@ -68,7 +68,7 @@ curl --fail http://127.0.0.1:8000/healthz
 
 ## 后续升级
 
-安装完成后，登录网页控制台首页，系统会检查 GitHub 最新 Release。出现新版本时点击“立即更新”即可自动完成下载、SHA-256/Ed25519 校验、备份、替换、回滚保护和重启。
+安装完成后，登录网页控制台首页，系统会优先检查 GitHub 最新 Release；GitHub 不可达或附件下载失败时会尝试新服务器备用源。出现新版本时点击“立即更新”即可自动完成下载、SHA-256/Ed25519 校验、备份、替换、回滚保护和重启。
 
 也可以手动查看版本：
 
@@ -87,5 +87,5 @@ cat /www/wwwroot/ct-club/release.json
 
 ## Release
 
-- 最新版本：[CT Club v2026.09.28](https://github.com/BOTBAKS/MR_KOOK_BOT/releases/tag/v2026.09.28)
+- 最新版本：[CT Club v2026.09.29](https://github.com/BOTBAKS/MR_KOOK_BOT/releases/tag/v2026.09.29)
 - 仓库：[BOTBAKS/MR_KOOK_BOT](https://github.com/BOTBAKS/MR_KOOK_BOT)
