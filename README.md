@@ -17,7 +17,7 @@ CT Club KOOK 机器人 Linux 服务端客户端与版本发布。
 
 ```bash
 set -Eeuo pipefail
-VERSION="2026.09.30"
+VERSION="2026.10.01"
 INSTALL_DIR="/www/wwwroot/ct-club"
 WORK_DIR="$(mktemp -d -t ct-club-install-XXXXXX)"
 trap 'rm -rf "$WORK_DIR"' EXIT
@@ -87,5 +87,5 @@ cat /www/wwwroot/ct-club/release.json
 
 ## Release
 
-- 最新版本：[CT Club v2026.09.30](https://github.com/BOTBAKS/MR_KOOK_BOT/releases/tag/v2026.09.30)
+- 最新版本：[CT Club v2026.10.01](https://github.com/BOTBAKS/MR_KOOK_BOT/releases/tag/v2026.10.01)
 - 仓库：[BOTBAKS/MR_KOOK_BOT](https://github.com/BOTBAKS/MR_KOOK_BOT)
